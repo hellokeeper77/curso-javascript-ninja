@@ -200,5 +200,25 @@ correta, de acordo com os dados inseridos no objeto.
 ?
 
 // Agora, apresente-se ;)
-?
+
+    pessoa.apresentacao = function() {
+    var sexo = 'o';
+    var idadeAnos = 'anos';
+    var metrosCaminhados = 'metros';
+    
+    if ( pessoa.sexo === 'Feminino' ) {
+    sexo = 'a';
+    }
+    
+    if ( pessoa.idade === 1 ) {
+      idadeAnos = ano;
+    }
+    
+    if ( pessoa.caminhouQuantosMetros === 1 ) {
+      metrosCaminhados = 'metro';
+    }
+    
+    return 'Olá, eu sou ' + sexo + ' ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' ' +  idadeAnos + ' ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metros.caminhaoss + '!.';
+}
+
 ```
