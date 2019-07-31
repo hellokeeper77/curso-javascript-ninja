@@ -159,7 +159,7 @@ comentários inline ao lado da instrução para mostrar a resposta retornada)
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-  pessoa.caminhouQuantosMetros // 70
+  pessoa.caminhouQuantosMetros // 60
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
@@ -167,7 +167,23 @@ Crie um método para o objeto `pessoa` chamado `apresentacao`. Esse método deve
 retornar a string:
 - "Olá, eu sou o [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
   pessoa.apresentacao = function() {
-    return 'Olá, eu sou ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' anos, ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' metros!.';
+    var sexo = 'o';
+    var idadeAnos = 'anos';
+    var metrosCaminhados = 'metros';
+    
+    if ( pessoa.sexo === 'Feminino' ) {
+    sexo = 'a';
+    }
+    
+    if ( pessoa.idade === 1 ) {
+      idadeAnos = ano;
+    }
+    
+    if ( pessoa.caminhouQuantosMetros === 1 ) {
+      metrosCaminhados = 'metro';
+    }
+    
+    return 'Olá, eu sou ' + sexo + ' ' + pessoa.nomeCompleto() + ', tenho ' + pessoa.idade + ' ' +  idadeAnos + ' ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metros.caminhaoss + '!.';
 }
 
 Só que, antes de retornar a string, você vai fazer algumas validações:
